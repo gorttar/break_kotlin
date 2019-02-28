@@ -3,7 +3,9 @@ package casts
 /**
  * casts/CollectionsBug.kt
  */
-inline fun catch(block: () -> Unit) =
+inline fun catch(
+    block: () -> Unit
+) =
     try {
         block()
     } catch (t: Throwable) {

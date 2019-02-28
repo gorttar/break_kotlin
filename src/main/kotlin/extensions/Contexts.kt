@@ -8,7 +8,9 @@ import kotlin.collections.List
 import kotlin.collections.listOf
 import kotlin.collections.plus as cPlus
 
-class IterableConcatLog(private val log: StringBuilder = StringBuilder()) {
+class IterableConcatLog(
+    private val log: StringBuilder = StringBuilder()
+) {
     private fun Iterable<*>.logPlus(element: Any?) =
         log.append(this).append(" + ").append(element).append("\n")
 
