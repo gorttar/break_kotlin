@@ -20,6 +20,6 @@ val круто = { print("круто") }
 infix fun Action.не(так: Action) = glue("не", так)
 val так = { print("так") }
 infix fun Action.ли(`?`: Action) = glue("ли", `?`)
-val `?` = { print("\b?") }
+val `!` = { print("\b?") }
 infix fun Action.Конечно(`!!!`: Action) = glue("Конечно", `!!!`).let { it() }
 val `!!!` = { print("\b!!!") }
