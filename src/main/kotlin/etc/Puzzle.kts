@@ -1,9 +1,9 @@
 package etc
 
 /**
- * etc/Puzzle.kt
+ * etc/Puzzle.kts
  */
-fun main() = println("Hello, human")
+println("Hello, human")
     .fun Any.() { println("Kotlin") }()
     .fun Any.() { println("Will") }()
     .fun Any.() { println("Rule") }()

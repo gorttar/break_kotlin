@@ -1,7 +1,7 @@
 package extensions
 
 /**
- * extensions/StringContexts.kt
+ * extensions/StringContexts.kts
  */
 class StringConcatLog(
     private val log: StringBuilder = StringBuilder()
@@ -15,7 +15,7 @@ class StringConcatLog(
     override fun toString(): String = log.toString()
 }
 
-fun main() = print(
+print(
     StringConcatLog().apply {
         "foo" + "bar"
     })

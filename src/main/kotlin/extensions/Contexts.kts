@@ -1,7 +1,7 @@
 package extensions
 
 /**
- * extensions/Contexts.kt
+ * extensions/Contexts.kts
  */
 import kotlin.collections.Iterable
 import kotlin.collections.List
@@ -23,7 +23,7 @@ class IterableConcatLog(
     override fun toString(): String = log.toString()
 }
 
-fun main() = print(
+print(
     IterableConcatLog().apply {
         listOf(1) + 2
         listOf(1) + listOf(2)

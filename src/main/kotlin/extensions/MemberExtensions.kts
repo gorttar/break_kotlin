@@ -1,7 +1,7 @@
 package extensions
 
 /**
- * extensions/MemberExtensions.kt
+ * extensions/MemberExtensions.kts
  */
 object Bar
 
@@ -11,8 +11,6 @@ class Foo {
 
 val foo = Foo()
 
-fun main() {
-    with(foo) { Bar.foo() }
-    foo.run { Bar.foo() }
-    foo.(fun Foo.() = Bar.foo()) ()
-}
+with(foo) { Bar.foo() }
+foo.run { Bar.foo() }
+foo.(fun Foo.() = Bar.foo()) ()
